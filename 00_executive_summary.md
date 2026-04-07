@@ -10,7 +10,8 @@
 | [03 Industry Case Studies](03_industry_case_studies.md) | Automotive, apparel, finance, food & ag — deep dives |
 | [04 Abatement Challenges](04_abatement_challenges.md) | Why measuring ≠ reducing; decarbonization playbook |
 | [05 Carbon3 Solution](05_carbon3_solution.md) | What carbon3.net proposes and how it addresses the gaps |
-| [06 Standards & Regulatory](06_standards_regulatory.md) | GHG Protocol, PCAF, SBTi, CSRD, SEC, ISSB S2 |
+| [06 Standards & Regulatory](06_standards_regulatory.md) | GHG Protocol, PCAF, SBTi, CSRD, SEC, ISSB S2, VCMI, CSDDD, PACT |
+| [07 Industry Data & Benchmarks](07_industry_data_and_benchmarks.md) | Real company data (1,391 companies), BCG/McKinsey/Bain research, VCM pricing |
 
 ---
 

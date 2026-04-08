@@ -190,7 +190,9 @@ flowchart TD
 
 ### Maritime
 
-Shipping is responsible for ~2.9% of global GHG emissions. The International Maritime Organization (IMO) targets net-zero by 2050. Carbon3's maritime application:
+Shipping is responsible for ~2.9% of global GHG emissions. The International Maritime Organization (IMO) targets net-zero by 2050. The maritime sector provides the clearest existing proof-of-concept for inset credits at scale: **DP World's Insetify programme** (launched UK January 2025, expanded to Belgium, Portugal and Sweden April 2026) has already issued 9,000+ tonnes CO₂e in credits across 250,000+ TEUs using Bureau Veritas certification and the Smart Freight Centre methodology — demonstrating that the operational infrastructure for maritime insets is viable today (see [Section 10 of Industry Data & Benchmarks](07_industry_data_and_benchmarks.md) for full case study).
+
+Carbon3's maritime application goes beyond DP World's current model in two ways: a **tradeable marketplace** with price discovery (DP World's certificates are non-transferable), and fuel switching beyond biofuels to green methanol and ammonia — which have greater abatement potential and stronger long-run additionality.
 
 ```mermaid
 flowchart TD

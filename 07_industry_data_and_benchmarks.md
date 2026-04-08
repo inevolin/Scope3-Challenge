@@ -1,6 +1,6 @@
 # Industry Data, Benchmarks, and Research Findings
 
-> **Data sources:** Carbon3 Emissions Registry (1,391 global companies, sustainability reports 2022–2025); BCG/CDP Scope 3 Upstream Report (June 2024); McKinsey & Company research (2023–2025); Bain & Company CEO Sustainability Guide (2025); World Economic Forum reports (2023–2025); Ecosystem Marketplace SOVCM (2025).
+> **Data sources:** Carbon3 Emissions Registry (1,391 global companies, sustainability reports 2022–2025); BCG/CDP Scope 3 Upstream Report (June 2024); McKinsey & Company research (2023–2025); Bain & Company CEO Sustainability Guide (2025); World Economic Forum reports (2023–2025); Ecosystem Marketplace SOVCM (2025); DP World Insetify programme data (2025–2026).
 >
 > **Carbon3 Registry note:** All company-level figures are drawn from verified sustainability reports filed by the named companies. Source report URLs are available via the Carbon3 emissions registry API at `demo.carbon3.net/api/emissions-registry`.
 
@@ -379,6 +379,99 @@ This is not a technology problem. It is a market design problem. The Carbon3 ins
 
 ---
 
+## 10. Real-World Validation: DP World's Insetify Programme
+
+The DP World Insetify case study is among the most instructive early-market examples of inset credits operating at commercial scale. It provides concrete proof that the operational and accounting infrastructure for shipping inset credits can be built and deployed — which has direct implications for what Carbon3 is building.
+
+### Programme Overview
+
+**DP World** — one of the world's largest port operators and logistics companies — launched a structured carbon inset credit programme for ocean freight customers:
+
+| Parameter | UK Pilot (launched Jan 2025) | EU Expansion (launched Apr 1, 2026) |
+|-----------|-----------------------------|------------------------------------|
+| Terminals / markets | Southampton, London Gateway | Belgium, Portugal, Sweden |
+| Credit amount | 250 kg CO₂e per import TEU (raised from 50 kg at launch) | 100 kg CO₂e per TEU per quarter |
+| Minimum threshold | Not specified | 25 TEUs/quarter |
+| Cost to customers | Free | Free |
+| Credits issued (UK pilot) | **9,000+ tonnes CO₂e** | — (expanding) |
+| Containers registered (UK) | **250,000+ TEUs** | — (expanding) |
+| Certification | Bureau Veritas (independent) | Bureau Veritas |
+| Methodology | Smart Freight Centre | Smart Freight Centre |
+
+*Sources: DP World press releases; [Maritime Executive](https://maritime-executive.com/corporate/dp-world-launches-carbon-inset-trial-in-belgium-portugal-and-sweden); [ESG News](https://esgnews.com/dp-world-launches-free-carbon-inset-trial-across-european-shipping-lanes/)*
+
+### How It Works: The Technical Stack
+
+```mermaid
+flowchart TD
+    subgraph Reduction["Emission Reduction Layer"]
+        Unifeeder["Unifeeder\n(container shipping operator)\n\nDeploys second-generation biofuels\n(ISCC-EU certified, RED II compliant)\non port call operations:\nvessel berthing, tug operations,\npilot boat movements"]
+        Svitzer["Svitzer\n(towage operator)\n\nTug boat emission reductions\ntracked via 123Carbon platform\nIndependently verified"]
+    end
+
+    subgraph Measurement["Measurement & Verification Layer"]
+        GreenBox["Unifeeder GreenBox Platform\nTracks fuel consumption\nvs. baseline per voyage"]
+        C123["Svitzer 123Carbon Platform\nTracks tug emission reductions"]
+        BV["Bureau Veritas\nIndependent third-party\ncertification of all credits"]
+        SFC["Smart Freight Centre Methodology\nIndustry-standard freight\nemission calculation framework"]
+    end
+
+    subgraph Issuance["Credit Issuance Layer"]
+        DPW["DP World Insetify\n\n• Issues credits quarterly\n• 100–250 kg CO₂e per TEU\n• Certificates valid 2 years\n• Non-transferable (no double-counting)\n• Free to qualifying freight customers"]
+    end
+
+    subgraph Claim["Customer Claim Layer"]
+        Freight["Ocean freight customers\n(importers, brands, retailers)\n\nClaim credits against\nScope 3 Cat 4 or Cat 9\n(upstream/downstream T&D)\nin sustainability reports"]
+    end
+
+    Reduction --> Measurement --> Issuance --> Claim
+
+    style BV fill:#2f9e44,color:#fff
+    style DPW fill:#339af0,color:#fff
+```
+
+### What Makes This Significant
+
+**1. Proof of scalability:** 250,000 TEUs registered and 9,000+ tCO₂e issued within the first year of the UK pilot demonstrates that inset credit issuance for ocean freight is operationally tractable at scale, not just theoretically plausible.
+
+**2. Methodology validation:** Use of the **Smart Freight Centre methodology** (the industry-standard framework for freight emission calculation) + **Bureau Veritas** independent certification establishes a credible standards pathway for maritime insets — the same standards stack that Carbon3-style platforms need to adopt.
+
+**3. The "free trial" model:** DP World's decision to offer credits at no cost to customers is a deliberate market-building strategy — seeding demand for inset credits among cargo owners before a paid market exists. This mirrors the classic two-sided marketplace cold start: create the buyer habit first, price discovery follows.
+
+**4. Credit value signal:** At 100–250 kg CO₂e per TEU, and with Maersk's registry data showing Cat 4 (upstream T&D) at ~23.8 Mt and Cat 9 (downstream T&D) at ~9.7 Mt of its total Scope 3, the freight customer segment represents a substantial addressable market for inset credits once pricing develops.
+
+> *"We believe carbon insetting is a pragmatic approach to managing residual emissions within a longer-term, holistic plan. We encourage organisations to explore carbon insets as part of intentional progress toward decarbonization."* — **John Trenchard, VP Sustainable International Supply Chains, DP World Europe**
+
+### What This Tells Us About the Inset Market
+
+The DP World programme is instructive not just as a success story but as a model to scrutinize carefully:
+
+**What it demonstrates well:**
+- Operational feasibility of per-shipment inset credit issuance
+- Bureau Veritas certification as a credible verification path for freight insets
+- Customer demand: 250,000 TEU registrations in <12 months is genuine uptake
+
+**What it does not yet resolve:**
+- **Additionality:** The biofuels DP World deploys are ISCC-EU certified, but as EU biofuel mandates tighten under Fit for 55, the "additionality" of switching to certified biofuels diminishes over time. Credits issued today for actions that will be legally required in 2028 will face retroactive additionality challenges.
+- **Price discovery:** The trial is free. No market-clearing price for maritime inset credits has yet been established. The commercial model post-trial is undefined.
+- **GHG Protocol recognition:** It is not yet clear whether freight customers using DP World inset certificates can formally reduce their Scope 3 Cat 4/9 disclosures under GHG Protocol rules, or whether they are using the certificates as supplementary disclosure only. This mirrors the broader accounting ambiguity that the GHG Protocol revision must resolve.
+- **Non-transferability as a limitation:** DP World's certificates are non-transferable and valid for 2 years. This is the right anti-double-counting design, but it means there is no secondary market — limiting price discovery and liquidity.
+
+### Implications for Carbon3
+
+The DP World case study validates three of Carbon3's core assumptions and surfaces one open question:
+
+| Assumption | DP World Evidence |
+|-----------|------------------|
+| Shipping operators will issue inset credits voluntarily | ✅ Validated — DP World did this proactively |
+| Bureau Veritas / SFC methodology is sufficient for certification | ✅ Validated — accepted by the market |
+| Freight customers will claim and use inset credits | ✅ Validated — 250,000 TEU registrations |
+| A liquid marketplace with price discovery is achievable | ⚠️ Not yet tested — DP World's programme is free/non-transferable |
+
+**The key open question** the DP World programme doesn't answer — but Carbon3's marketplace model directly addresses — is whether a *liquid, priced, tradeable* inset credit market can develop. DP World demonstrates the supply-side and demand-side exist. Carbon3's value proposition is building the market infrastructure that connects them with transparent pricing, an allocation engine, and a trading layer.
+
+---
+
 ## Sources
 
 - [BCG/CDP: Scope 3 Upstream: Big Challenges, Simple Remedies (June 2024)](https://www.bcg.com/press/25june2024-corporates-supply-chain-scope-3-emissions-higher-than-operational-emissions)
@@ -393,3 +486,7 @@ This is not a technology problem. It is a market design problem. The Carbon3 ins
 - [WEF: "No-Excuse" Opportunities to Tackle Scope 3 in Manufacturing (2023)](https://www3.weforum.org/docs/WEF_No-Excuse%E2%80%9D_Opportunities_to_Tackle_Scope_3_Emissions_in_Manufacturing_and_Value_Chains_2023.pdf)
 - [Walmart Project Gigaton: 1B tonnes achieved 6 years early (ESG Today, 2024)](https://www.esgtoday.com/walmart-hits-goal-to-reduce-1-billion-tons-of-supply-chain-emissions-6-years-ahead-of-2030-target/)
 - [Carbon3 Emissions Registry API: demo.carbon3.net/api/emissions-registry](https://demo.carbon3.net/api/emissions-registry)
+- [DP World: Carbon Inset Programme (UK)](https://www.dpworld.com/en/sustainability/united-kingdom/carbon-inset-programme)
+- [Maritime Executive: DP World Launches Carbon Inset Trial in Belgium, Portugal and Sweden (Mar 2026)](https://maritime-executive.com/corporate/dp-world-launches-carbon-inset-trial-in-belgium-portugal-and-sweden)
+- [ESG News: DP World Launches Free Carbon Inset Trial Across European Shipping Lanes (Mar 2026)](https://esgnews.com/dp-world-launches-free-carbon-inset-trial-across-european-shipping-lanes/)
+- [Supply Chain Digital: DP World Carbon Inset Programme Hits 100,000 Containers](https://supplychaindigital.com/sustainability/dp-world-carbon-inset-hits-10000-containers)

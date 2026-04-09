@@ -1,6 +1,6 @@
 # Scope 3 Emissions: The Hardest Problem in Corporate Climate Action
 
-> A structured knowledge base on Scope 3 GHG accounting — from first principles to regulatory detail to real company data. Built by the team at **[carbon3.net](https://carbon3.net)**, the market infrastructure for supply-chain decarbonisation.
+> A structured knowledge base on Scope 3 GHG accounting — from first principles to regulatory detail to real company data.
 
 ---
 
@@ -108,7 +108,7 @@ Registry data is available via the Carbon3 API: `demo.carbon3.net/api/emissions-
 | **4 — Management** | Near-complete coverage, verified data | Supplier decarbonization programs | ~8% |
 | **5 — Transformation** | Real-time supply chain carbon intelligence | Embedded carbon pricing in procurement | ~2% |
 
-Most Fortune 500 companies are at Level 2. The [Carbon3 platform](https://carbon3.net) is designed to help companies move from Level 2–3 to Level 4–5 by creating the financial infrastructure that makes supplier action viable.
+Most Fortune 500 companies are at Level 2. The [05 Carbon3 Solution](05_carbon3_solution.md) describes the market infrastructure designed to help companies move from Level 2–3 to Level 4–5.
 
 ---
 
@@ -119,3 +119,4 @@ Corrections, updated data, additional sector case studies, and regulatory update
 ---
 
 *Built by [Carbon3 Global Pte. Ltd.](https://carbon3.net) — building the market infrastructure that makes supply-chain decarbonisation financially self-sustaining.*
+

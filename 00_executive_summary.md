@@ -49,28 +49,56 @@ The challenge compounds itself: the entities that produce the most emissions oft
 ### Why This Is Structurally Hard — Five Root Causes
 
 ```mermaid
-mindmap
-  root((Scope 3 Failure Modes))
-    Data Gaps
-      Suppliers lack measurement capacity
-      Primary data collection is expensive
-      Spend-based proxies hide real intensity
-    Attribution Conflicts
-      Who owns shared emissions?
-      Double-counting across value chains
-      Allocation methodology disagreements
-    Incentive Misalignment
-      Suppliers bear cost of disclosure
-      Buyers benefit from supplier data
-      No universal enforcement mechanism
-    Boundary Ambiguity
-      Category definitions overlap
-      System boundaries poorly defined
-      Downstream use estimates speculative
-    Standard Fragmentation
-      GHG Protocol vs PCAF vs ISO 14064
-      Sector-specific vs cross-sector norms
-      Regulatory divergence across jurisdictions
+flowchart TB
+    Root["⚠️ Scope 3 Failure Modes"]
+
+    Root --> D["📂 Data Gaps"]
+    Root --> A["⚖️ Attribution Conflicts"]
+    Root --> I["💸 Incentive Misalignment"]
+    Root --> B["🔲 Boundary Ambiguity"]
+    Root --> S["📋 Standard Fragmentation"]
+
+    D --> D1["Suppliers lack measurement capacity"]
+    D --> D2["Primary data collection is expensive"]
+    D --> D3["Spend-based proxies hide real intensity"]
+
+    A --> A1["Who owns shared emissions?"]
+    A --> A2["Double-counting across value chains"]
+    A --> A3["Allocation methodology disagreements"]
+
+    I --> I1["Suppliers bear the cost of disclosure"]
+    I --> I2["Buyers benefit from supplier data"]
+    I --> I3["No universal enforcement mechanism"]
+
+    B --> B1["Category definitions overlap"]
+    B --> B2["System boundaries poorly defined"]
+    B --> B3["Downstream use estimates speculative"]
+
+    S --> S1["GHG Protocol vs PCAF vs ISO 14064"]
+    S --> S2["Sector-specific vs cross-sector norms"]
+    S --> S3["Regulatory divergence across jurisdictions"]
+
+    style Root fill:#c92a2a,color:#fff
+    style D fill:#1971c2,color:#fff
+    style A fill:#1971c2,color:#fff
+    style I fill:#1971c2,color:#fff
+    style B fill:#1971c2,color:#fff
+    style S fill:#1971c2,color:#fff
+    style D1 fill:#e7f5ff,color:#1864ab
+    style D2 fill:#e7f5ff,color:#1864ab
+    style D3 fill:#e7f5ff,color:#1864ab
+    style A1 fill:#e7f5ff,color:#1864ab
+    style A2 fill:#e7f5ff,color:#1864ab
+    style A3 fill:#e7f5ff,color:#1864ab
+    style I1 fill:#e7f5ff,color:#1864ab
+    style I2 fill:#e7f5ff,color:#1864ab
+    style I3 fill:#e7f5ff,color:#1864ab
+    style B1 fill:#e7f5ff,color:#1864ab
+    style B2 fill:#e7f5ff,color:#1864ab
+    style B3 fill:#e7f5ff,color:#1864ab
+    style S1 fill:#e7f5ff,color:#1864ab
+    style S2 fill:#e7f5ff,color:#1864ab
+    style S3 fill:#e7f5ff,color:#1864ab
 ```
 
 **1. The Data Desert.** Most Scope 3 emissions are estimated, not measured. Tier-1 suppliers are difficult enough to engage; Tier-2 and beyond are almost impossible. The further upstream you go, the coarser the data. Most companies rely on spend-based emission factors — essentially multiplying invoiced spend by an average sector intensity — which can be off by **factors of 2–10x** from real emissions.

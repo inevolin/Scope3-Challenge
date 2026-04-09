@@ -1,5 +1,26 @@
 # Scope 3 Emissions: The Hardest Problem in Corporate Climate Action
 
+> **TL;DR for executives:**
+> - Scope 3 = 70–90% of most companies' real climate footprint, yet is largely invisible, estimated, and underreported.
+> - The problem is structural: data gaps, misaligned supplier incentives, standard fragmentation, and no market mechanism to finance upstream action.
+> - The companies that win the transition are not those who report best — they are those who build operational infrastructure to *manage* Scope 3.
+
+---
+
+## How to Use This Guide
+
+| I am... | Start with | Then go to |
+|---------|-----------|-----------|
+| **Executive / Board member** | This document | [04 Abatement Challenges](04_abatement_challenges.md) — focus on the maturity model and SBTi implications |
+| **Sustainability / ESG lead** | [01 Fundamentals](01_scope3_fundamentals.md) | [02 Complexity](02_complexity_challenges.md) → [06 Standards](06_standards_regulatory.md) |
+| **Finance / Risk team** | [06 Standards & Regulatory](06_standards_regulatory.md) | [03 Case Studies — Banking & Finance](03_industry_case_studies.md) |
+| **Procurement / Operations** | [03 Industry Case Studies](03_industry_case_studies.md) | Supplier engagement diagrams in each sector |
+| **Technologist / Data team** | [02 Complexity & Challenges](02_complexity_challenges.md) | [07 Data & Benchmarks](07_industry_data_and_benchmarks.md) |
+
+→ *Full guide index and overview at the [repository README](README.md).*
+
+---
+
 ## Guide Index
 
 | File | Contents |
@@ -9,7 +30,7 @@
 | [02 Complexity & Challenges](02_complexity_challenges.md) | Why accounting is so hard — data, attribution, incentives |
 | [03 Industry Case Studies](03_industry_case_studies.md) | Automotive, apparel, finance, food & ag — deep dives |
 | [04 Abatement Challenges](04_abatement_challenges.md) | Why measuring ≠ reducing; decarbonization playbook |
-| [05 Carbon3 Solution](05_carbon3_solution.md) | What carbon3.net proposes and how it addresses the gaps |
+| [05 Carbon3 Solution](05_carbon3_solution.md) | The inset credit model and market infrastructure |
 | [06 Standards & Regulatory](06_standards_regulatory.md) | GHG Protocol, PCAF, SBTi, CSRD, SEC, ISSB S2, VCMI, CSDDD, PACT |
 | [07 Industry Data & Benchmarks](07_industry_data_and_benchmarks.md) | Real company data (1,391 companies), BCG/McKinsey/Bain research, VCM pricing |
 
@@ -78,11 +99,11 @@ Each lever requires a different type of engagement, a different data infrastruct
 
 | Maturity Level | Accounting Quality | Abatement Action | % of Fortune 500 |
 |---------------|-------------------|------------------|------------------|
-| Level 1: Absent | No Scope 3 disclosure | None | ~15% |
-| Level 2: Awareness | Spend-based estimates for some categories | Ad hoc supplier engagement | ~45% |
-| Level 3: Measurement | Hybrid/primary data for material categories | Supplier scorecards | ~30% |
-| Level 4: Management | Near-complete coverage, verified data | Supplier decarbonization programs | ~8% |
-| Level 5: Transformation | Real-time supply chain carbon intelligence | Embedded carbon pricing in procurement | ~2% |
+| **Level 1: Absent** | No Scope 3 disclosure | None | ~15% |
+| **Level 2: Awareness** | Spend-based estimates for some categories | Ad hoc supplier engagement | ~45% |
+| **Level 3: Measurement** | Hybrid/primary data for material categories | Supplier scorecards | ~30% |
+| **Level 4: Management** | Near-complete coverage, verified data | Supplier decarbonization programs | ~8% |
+| **Level 5: Transformation** | Real-time supply chain carbon intelligence | Embedded carbon pricing in procurement | ~2% |
 
 ### Key Insight for Executives
 
@@ -90,10 +111,4 @@ Each lever requires a different type of engagement, a different data infrastruct
 
 ---
 
-## How to Use This Guide
-
-- **Executives and board members:** Read this summary and [04 Abatement Challenges](04_abatement_challenges.md). Focus on the maturity model and the section on SBTi target-setting implications.
-- **Sustainability / ESG leads:** Start with [01 Fundamentals](01_scope3_fundamentals.md) then go deep on [02 Complexity](02_complexity_challenges.md) and [06 Standards](06_standards_regulatory.md).
-- **Operations / procurement leaders:** The industry case studies in [03](03_industry_case_studies.md) will be most relevant, especially the supplier engagement diagrams.
-- **Finance / risk teams:** [06 Standards](06_standards_regulatory.md) covers mandatory disclosure timelines and [03](03_industry_case_studies.md) covers PCAF and financed emissions.
-- **Technologists and data teams:** [02 Complexity](02_complexity_challenges.md) maps the data architecture problem in detail.
+*This guide is maintained by [Carbon3](https://carbon3.net) — building the market infrastructure that makes supply-chain decarbonisation financially self-sustaining. See [05 Carbon3 Solution](05_carbon3_solution.md) for how the inset credit model addresses the structural gaps described above.*
